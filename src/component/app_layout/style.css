@@ -1,0 +1,11 @@
+.app-layout-container {
+    width: 99vw;
+    height: 99vh;
+    display: grid;
+    grid-template-rows: 72px 1fr;
+}
+
+.sidebar-child-container {
+    display: flex;
+    /* grid-template-columns: 155px, 1fr; */
+}

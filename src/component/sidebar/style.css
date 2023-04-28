@@ -1,0 +1,38 @@
+.sidebar {
+    width: 155px;
+    height: 100vh;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    border-right: solid 0.5px black;
+    border-top: solid 0.5px black;
+}
+
+.item {
+    height: 30px;
+    font-size: 18px;
+    color: black;
+    padding: 5px;
+    margin: 3px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.item:hover {
+    background-color: #eff3f8;
+    border-radius: 8px;
+    border: solid 0.15px black;
+}
+
+.icon {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.sidebar-menu-item {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+}

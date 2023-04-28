@@ -1,0 +1,16 @@
+.home-container {
+    max-width: fit-content;
+    max-height: 100vh;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: aquamarine;
+}
+
+.video-conainter {
+    width: 310px;
+    height: 200px;
+    margin: 5px;
+    border: solid 0.25px black;
+}
