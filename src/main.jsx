@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './styles/main.css';
+import { homeDataLoader, searchDataLoader } from "./api/loaders";
 import Home from './pages/home'
 import Settings from './pages/settings'
 import AppLayout from "./component/app_layout";
@@ -30,7 +31,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home />
+        element: <Home />,
+        loader: homeDataLoader
       },
       {
         path: '/shorts',
@@ -94,7 +96,8 @@ const router = createBrowserRouter([
       },
       {
         path: ':query',
-        element: <SearchResult />
+        element: <SearchResult />,
+        loader: searchDataLoader
       }
     ]
   },

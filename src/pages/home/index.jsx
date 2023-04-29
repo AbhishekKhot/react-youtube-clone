@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './style.css'
+import { json, useLoaderData } from 'react-router-dom'
 export default function Home() {
     const queries = [
         "All", "Trending", "Music", "Education", "HTML", "React tutorials", "Thrilles", "Comedy", "Car reviews", "Wild-life", "Watched",
@@ -7,6 +8,10 @@ export default function Home() {
     ]
 
     const [queryStyle, setQueryStyle] = useState([])
+
+    const data = useLoaderData()
+
+    console.log(data)
 
 
     function changeQueryItemStyle(position) {
