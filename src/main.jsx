@@ -86,6 +86,10 @@ const router = createBrowserRouter([
       {
         path: '/help',
         element: <Help />
+      },
+      {
+        path: '/watchlater',
+        element: <Feedback />
       }
     ]
   },

@@ -5,7 +5,8 @@ import './style.css'
 import Sidebar from '../sidebar'
 
 export default function AppLayout() {
-    const [toggleMenu, setToggleMenu] = useState(false)
+    const [toggleMenu, setToggleMenu] = useState(true)
+    
 
     return (
         <div className='app-layout-container'>

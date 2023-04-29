@@ -34,10 +34,19 @@
 
 .query-item {
     min-width: fit-content;
-    padding: 5px;
+    padding: 8px;
     background-color: #f8f9fa;
     border: solid 0.5px black;
-    border-radius: 8px;
+    border-radius: 12px;
+}
+
+.query-item-clicked {
+    min-width: fit-content;
+    padding: 8px;
+    color: white;
+    background-color: black;
+    border: solid 0.5px black;
+    border-radius: 12px;
 }
 
 .query-item:hover {

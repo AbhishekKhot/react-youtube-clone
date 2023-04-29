@@ -2,7 +2,7 @@
     width: 100vw;
     height: 72px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #f8f9fa;
     border-bottom: solid 0.5px black;
@@ -12,32 +12,95 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: solid 0.5px black;
+    padding-right: 5px;
 }
 
 .search-icon {
-    width: 28px;
-    height: 28px;
+    width: 25px;
+    height: 25px;
     margin-left: 3px;
 }
 
+.search-icon:hover {
+    cursor: pointer;
+}
+
+.left-icon-container {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    margin-left: 10px;
+}
+
 .menu-icon {
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    color: black;
+}
+
+.youtube-icon {
     width: 30px;
     height: 30px;
     padding: 3px;
+    color: red;
+}
+
+.youtube-text {
+    width: 82px;
+    font-size: 22px;
     color: black;
-    margin-left: -545px;
+    font-weight: bold;
 }
 
 .menu-icon:hover {
+    cursor: pointer;
     background-color: #eff3f8;
-    border-radius: 8px;
+    border-radius: 22px;
     border: solid 0.15px black;
 }
 
 .input-search {
-    width: 300px;
+    width: 600px;
     height: 38px;
     padding-inline: 5px;
-    border-radius: 10px;
     border: solid 0.5px black;
+}
+
+.right-icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.account-icon {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    color: orange;
+}
+
+.account-icon:hover {
+    cursor: pointer;
+    background-color: #eff3f8;
+    border-radius: 22px;
+    border: solid 0.15px black;
+}
+
+.notification-icon {
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    color: rgb(56, 54, 54);
+}
+
+.notification-icon:hover {
+    cursor: pointer;
+    background-color: #eff3f8;
+    border-radius: 22px;
+    border: solid 0.15px black;
 }
