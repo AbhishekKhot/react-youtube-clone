@@ -21,6 +21,7 @@ import News from './pages/news';
 import Sports from './pages/sports';
 import Feedback from './pages/feedback';
 import Help from './pages/help';
+import SearchResult from './pages/search-result';
 
 const router = createBrowserRouter([
   {
@@ -90,6 +91,10 @@ const router = createBrowserRouter([
       {
         path: '/watchlater',
         element: <Feedback />
+      },
+      {
+        path: ':query',
+        element: <SearchResult />
       }
     ]
   },
