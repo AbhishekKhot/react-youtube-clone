@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.css'
 import { Link } from 'react-router-dom'
 import { AiOutlineHome } from 'react-icons/ai'
@@ -10,9 +10,11 @@ import { CiMusicNote1 } from 'react-icons/ci'
 import { BiMoviePlay, BiNews, BiTrophy, BiHelpCircle } from 'react-icons/bi'
 import { TbLivePhoto } from 'react-icons/tb'
 import { SiYoutubegaming } from 'react-icons/si'
-import { MdOutlineFeedback } from 'react-icons/md'
+import { MdOutlineFeedback, MdOutlineWatchLater, MdOutlineQueueMusic, MdArrowDropDown } from 'react-icons/md'
 
 export default function Sidebar() {
+    const [showMore, setShowMore] = useState(false)
+
     return (
         <div className='sidebar'>
             <Link to='/' className='item'>
@@ -33,6 +35,10 @@ export default function Sidebar() {
                 <AiOutlineHistory className='icon' />
                 <span>History</span>
             </Link>
+            <Link to='/watchlater' className='item'>
+                <MdOutlineWatchLater className='icon' />
+                <span>Watch later</span>
+            </Link>
             <Link to='/settings' className='item'>
                 <FiSettings className='icon' />
                 <span>Settings</span>
@@ -52,6 +58,35 @@ export default function Sidebar() {
                 <CiMusicNote1 className='icon' />
                 <span>Music</span>
             </Link>
+
+            <span className='item' onClick={() => setShowMore((prev) => !prev)}>
+                <MdArrowDropDown className='icon' />
+                <span>{showMore ? "Show less" : "Show more"}</span>
+            </span>
+
+            {showMore &&
+                <>
+                    <Link to='/music' className='item'>
+                        <MdOutlineQueueMusic className='icon' />
+                        <span>Hindi Songs</span>
+                    </Link>
+                    <Link to='/music' className='item'>
+                        <MdOutlineQueueMusic className='icon' />
+                        <span>Panjabi Songs</span>
+                    </Link>
+                    <Link to='/music' className='item'>
+                        <MdOutlineQueueMusic className='icon' />
+                        <span>Tamil Songs</span>
+                    </Link>
+                </>
+            }
+            <hr />
+
+
+
+
+
+
             <Link to='/movies' className='item'>
                 <BiMoviePlay className='icon' />
                 <span>Movies</span>

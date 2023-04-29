@@ -1,6 +1,7 @@
 .sidebar {
-    width: 155px;
+    width: 200px;
     height: 100vh;
+    overflow-y: auto;
     display: flex;
     align-items: left;
     flex-direction: column;

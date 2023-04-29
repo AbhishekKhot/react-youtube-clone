@@ -23,9 +23,15 @@
 .menu-icon {
     width: 30px;
     height: 30px;
-    padding: 5px;
+    padding: 3px;
     color: black;
-    margin-left: -550px;
+    margin-left: -545px;
+}
+
+.menu-icon:hover {
+    background-color: #eff3f8;
+    border-radius: 8px;
+    border: solid 0.15px black;
 }
 
 .input-search {

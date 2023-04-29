@@ -6,6 +6,7 @@
 }
 
 .sidebar-child-container {
+    width: fit-content;
     display: flex;
     /* grid-template-columns: 155px, 1fr; */
 }
